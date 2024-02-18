@@ -99,11 +99,11 @@ def parseJson(json_file):
         # creates a Python dictionary of Items for the supplied json file
         json_file = loads(f.read())['Items']
 
-        items = open("items.dat", "w")
-        categories = open("categories.dat", "w")
-        bids = open("bids.dat", "w")
-        bidders = open("bidders.dat", "w")
-        sellers = open("seller.dat", "w")
+        items = open("items.dat", "a")
+        categories = open("categories.dat", "a")
+        bids = open("bids.dat", "a")
+        bidders = open("bidders.dat", "a")
+        sellers = open("seller.dat", "a")
         for item in json_file:
             """
             TODO: traverse the items dictionary to extract information from the
