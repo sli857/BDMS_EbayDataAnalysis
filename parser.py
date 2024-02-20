@@ -103,7 +103,7 @@ def parseJson(json_file):
         categories = open("categories.dat", "a")
         bids = open("bids.dat", "a")
         bidders = open("bidders.dat", "a")
-        sellers = open("seller.dat", "a")
+        sellers = open("sellers.dat", "a")
         for item in json_file:
             """
             TODO: traverse the items dictionary to extract information from the
@@ -150,7 +150,7 @@ def parseJson(json_file):
 
                         case "Seller":
                             slr = item[field]
-                            sellers.write("{}|\"{}\"|{}\n".format(itemID, slr["UserID"].replace('"','""'), slr["Rating"]))
+                            sellers.write("{}|\"{}\"|{}|\"{}\"\n".format(itemID, slr["UserID"].replace('"','""'), slr["Rating"].replace('"','""'),item["Location"].replace('"','""')))
 
                         case _:
                             items.write("|")
