@@ -1,4 +1,4 @@
-Loaded data of ~20k items from ebay to SQLite3, and answer the following questions by SQL queries
+Loaded data of ~20k items from ebay to SQLite3, and answered the following questions by SQL queries
 1. Find the number of users in the database.
 2. Find the number of users from New York (i.e., users whose location is the string "New York").
 3. Find the number of auctions belonging to exactly four categories.
